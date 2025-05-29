@@ -16,7 +16,7 @@ function contient_cyrillique($texte) {
 }
 
 function est_numero_valide($numero) {
-    return preg_match('/^(06|07|\+336|\+337)\d{8}$/', $numero);
+    return preg_match('/^(01|09|06|07|\+336|\+337)\d{8}$/', $numero);
 }
 
 $nom = htmlspecialchars($_POST['nom'], ENT_QUOTES, 'UTF-8');
@@ -64,7 +64,7 @@ try {
     $mail->Port       = 465;
 
     $mail->setFrom('contact@webprime.fr', 'IDF 94');
-    $mail->addAddress('contact@assainissement94.com');
+    $mail->addAddress('info.assainissement@gmail.com');
     $mail->addAddress('webprime91@hotmail.com');
     $mail->CharSet = 'UTF-8';
     $mail->isHTML(true);
