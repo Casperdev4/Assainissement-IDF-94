@@ -76,6 +76,18 @@ form{width:90%}
 .webprimex a,.webprimex h6{font-size:13px;color:#fff;text-align:center;font-weight:300;margin-top:3%}
 .contact-icon,.realisation,.container,.clickclick{display:none}
 
+/* FAQ Section */
+.faq-section{width:80%;margin:5% auto;padding:2%}
+.faq-section h2{font-size:35px;margin-bottom:5%;color:#01002c}
+.faq-item{background:#fff;border:2px solid #01002c;border-radius:15px;margin-bottom:15px;overflow:hidden}
+.faq-item summary{padding:20px 25px;font-size:18px;font-weight:600;color:#01002c;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";font-size:24px;font-weight:700;color:#6F90CE;transition:transform 0.3s}
+.faq-item[open] summary::after{content:"-"}
+.faq-item[open] summary{background:#6F90CE;color:#fff}
+.faq-item[open] summary::after{color:#fff}
+.faq-answer{padding:20px 25px;color:#01002c;font-size:17px;line-height:1.7;text-align:left}
+
 .hp-wrap {
     position: absolute !important;
     left: -9999px !important;
@@ -165,4 +177,9 @@ form{width:95%}
 .zmzmzmzmz{text-align:center;margin-bottom:13%}
 .zmzmzmzmz a{font-size:13px;color:#fff}
 .realisation-pc,.orbigeds,.orbigeds2{display:none}
+.faq-section{width:95%;margin:10% auto;padding:1%}
+.faq-section h2{font-size:25px;margin-bottom:8%}
+.faq-item summary{padding:15px 18px;font-size:16px}
+.faq-item summary::after{font-size:20px}
+.faq-answer{padding:15px 18px;font-size:15px}
 }
