@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command:*)",
+      "Bash(bash update_forms.sh:*)",
+      "Bash(grep:*)",
+      "Bash(ls:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nMigration formulaires vers webhook WebPrime\n\n- Remplacement de formsubmit.co par webhook WebPrime\n- Ajout du champ email sur tous les formulaires\n- Suppression des accents dans le JavaScript\n- Anti-spam honeypot avec _gotcha\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push)",
+      "Bash(git pull:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}
